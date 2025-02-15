@@ -41,7 +41,7 @@ This is a simple GUI-based calculator developed using Java Swing. The applicatio
 
 
 ## Author
-- Developed by [carol]
+- Developed by [carol ngomane]
 
 
 
