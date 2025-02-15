@@ -84,6 +84,10 @@ import java.awt.event.ActionListener;
                 JOptionPane.showMessageDialog(this, "Please enter valid numbers!", "Input Error", JOptionPane.ERROR_MESSAGE);
             }
         }
-
-
+        // Main Method
+        public static void main(String[] args) {
+            new CalculatorGUI();
+        }
     }
+
+
