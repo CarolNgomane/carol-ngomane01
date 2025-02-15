@@ -85,9 +85,6 @@ import java.awt.event.ActionListener;
             }
         }
         // Main Method
-        public static void main(String[] args) {
-            new CalculatorGUI();
-        }
-    }
+
 
 
