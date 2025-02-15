@@ -1,22 +1,27 @@
-public class CalculatorGUI {
+
 import javax.swing .*;
 import java.awt .*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
     public class CalculatorGUI extends JFrame implements ActionListener {
-        // Components
-        private JTextField txtNum1, txtNum2, txtResult;
-        private JButton btnAdd, btnSubtract, btnMultiply, btnDivide;
 
-        // Constructor
+        private final JTextField txtNum1;
+        private final JTextField txtNum2;
+        private final JTextField txtResult;
+        private final JButton btnAdd;
+        private final JButton btnSubtract;
+        private final JButton btnMultiply;
+        private final JButton btnDivide;
+
+
         public CalculatorGUI() {
             setTitle("Basic Calculator");
             setSize(400, 300);
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setLayout(new GridLayout(5, 2, 10, 10));
 
-            // Creating UI Components
+
             add(new JLabel("Enter Number 1:"));
             txtNum1 = new JTextField();
             add(txtNum1);
@@ -30,13 +35,13 @@ import java.awt.event.ActionListener;
             btnMultiply = new JButton("*");
             btnDivide = new JButton("/");
 
-            // Adding Action Listeners
+
             btnAdd.addActionListener(this);
             btnSubtract.addActionListener(this);
             btnMultiply.addActionListener(this);
             btnDivide.addActionListener(this);
 
-            // Adding Buttons to the Frame
+
             add(btnAdd);
             add(btnSubtract);
             add(btnMultiply);
@@ -82,4 +87,3 @@ import java.awt.event.ActionListener;
 
 
     }
-}
